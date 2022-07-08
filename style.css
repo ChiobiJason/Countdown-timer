@@ -1,15 +1,60 @@
 body {
+    background: radial-gradient(circle at 10% 20%, rgb(111, 111, 219) 0%, rgb(182, 109, 246) 72.4%);
+}
+
+/* #countdownTimer{
+    color: black;
+    font-size: 5em;
+    font-weight: 800;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(181,27,166,1) 35%);
+} */
+
+/* h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+} */
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#countdownTimer{
-    color: white;
-    font-size: 5em;
-    font-weight: 800;
+#countdown {
+    display: flex;
+    justify-content: space-around;
     font-family: sans-serif;
+    text-align: center;
+}
+
+.day,.hour,.minute,.second {
+    font-size: 3rem;
+}
+
+@media (max-width: 462px) {
+    img {
+        height: 20vh;
+    }
+}
+
+
+
+.container-day, .container-hour, .container-minute {
+    padding: 10px 30px 0px 15px;
+    border-right: 1px solid black;
+}
+
+.container-second {
+    padding: 10px 30px 0px 15px;
+}
+
+.timedesc {
+    font-size: 10px;
 }
