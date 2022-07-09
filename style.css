@@ -19,12 +19,47 @@ body {
     padding: 3rem;
 } */
 
-.coming-soon {
+/* .coming-soon {
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+} */
+
+.event-heading {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+@media (max-width: 462px) {
+    .event-heading {
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
+
+.event-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #912090;
+}
+
+.event-link:hover {
+    text-decoration: none;
+    color: #912090;
+}
+
+.event-info {
+    text-align: left;
+    font-size: 30px;
+}
+
+@media (max-width: 462px) {
+    .event-info {
+        text-align: left;
+        font-size: 20px;
+    }
 }
 
 #countdown {
@@ -38,23 +73,33 @@ body {
     font-size: 3rem;
 }
 
-@media (max-width: 462px) {
-    img {
-        height: 20vh;
-    }
-}
-
-
-
 .container-day, .container-hour, .container-minute {
-    padding: 10px 30px 0px 15px;
+    padding: 10px 100px 0px 0px;
     border-right: 1px solid black;
 }
 
 .container-second {
-    padding: 10px 30px 0px 15px;
+    padding: 10px 30px 0px 0px;
+}
+
+@media (max-width: 462px) {
+    .container-day, .container-hour, .container-minute {
+        padding: 10px 30px 0px 15px;
+        border-right: 1px solid black;
+    }
+    
+    .container-second {
+        padding: 10px 30px 0px 15px;
+    }
 }
 
 .timedesc {
     font-size: 10px;
+    color: #7c7c7c;
+}
+
+@media (max-width: 462px) {
+    img {
+        height: 20vh;
+    }
 }
